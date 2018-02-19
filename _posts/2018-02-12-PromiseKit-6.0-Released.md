@@ -219,9 +219,24 @@ firstly {
 `tap` feeds you the current `Result<T>` for the chain, so is called if the
 chain is succeeding or if it is failing.
 
-### `last`, `first`, `filter`, `compactMap`, etc.
+### `lastValue`, `firstValue`, `filterValues`, `compactMap`, etc.
 
-We have added many of the other functional primitives that `Sequence` have.
+We have added many of the other functional primitives that `Sequence` have
+including logical extensions like `thenMap`.
+
+```swift
+firstly {
+    return when(fulfilled: promisesForDataFetches)
+}.map {
+    String(data: $0)  // runs for each data from the `when`
+}.thenMap {
+    fetch(stringUrl: $0) // fetch returns promise, runs once for each string
+}.done { arrayOfFetchedThings in
+    // finally you have an array of things!
+}
+```
+
+[Naming discussion was here](https://github.com/mxcl/PromiseKit/issues/773).
 
 ## `Promise.init`
 
