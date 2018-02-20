@@ -405,6 +405,15 @@ your apps.
 
 > Note sorry about these names. I missed the `TODO` to fix them before release…
 
+
+## Defining the Default Catch Policy
+
+You can now define that the default catch policy for all `recover` and `catch`
+by `allErrors` rather than `allErrorsExceptCanncellation` by changing
+`conf.catchPolicy`.
+
+> To learn more about PromiseKit’s cancellation system, see the dedicated part
+of our documentation at GitHub.
   
 ## Migration Guide
 
