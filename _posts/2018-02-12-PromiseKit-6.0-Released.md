@@ -98,7 +98,8 @@ In use we find the introduction of `Guarantee` fabulous and very “Swifty”.
 > Notably returning a `Guarantee` from a `Promise`’s `then` does not cause that
 `then` to return a `Guarantee`. Any part of a previous chain could have error’d
 even if that specific `then` does not, so we cannot become a `Guarantee` unless
-you `recover` (and your recover handler cannot `throw`!) first.
+you `recover` (and in order to remain a `Guarantee` your recover handler cannot
+`throw`!) first.
 
 ## Why PromiseKit 5/6?
 
