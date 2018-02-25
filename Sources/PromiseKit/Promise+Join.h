@@ -1,5 +1,5 @@
 #import <Foundation/NSEnumerator.h>
-#import <PromiseKit/Promise.h>
+#import "Promise.h"
 
 
 @interface PMKPromise (Join)

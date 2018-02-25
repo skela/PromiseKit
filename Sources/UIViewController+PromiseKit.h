@@ -1,4 +1,4 @@
-#import <PromiseKit/fwd.h>
+#import "fwd.h"
 #import <UIKit/UIViewController.h>
 
 /**

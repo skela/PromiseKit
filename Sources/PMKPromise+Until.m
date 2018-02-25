@@ -1,5 +1,5 @@
-#import <PromiseKit/Promise.h>
-#import "PromiseKit/Promise+When.h"
+#import "Promise.h"
+#import "Promise+When.h"
 
 
 #pragma clang diagnostic push

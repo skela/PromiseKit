@@ -1,7 +1,7 @@
 #import <dispatch/dispatch.h>
 #import <Foundation/NSError.h>
 #import <Foundation/NSArray.h>
-#import <PromiseKit/fwd.h>
+#import "fwd.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdocumentation"

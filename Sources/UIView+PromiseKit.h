@@ -1,4 +1,4 @@
-#import <PromiseKit/fwd.h>
+#import "fwd.h"
 #import <UIKit/UIView.h>
 
 //  Created by Masafumi Yoshida on 2014/07/11.

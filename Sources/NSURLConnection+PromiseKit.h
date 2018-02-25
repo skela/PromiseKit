@@ -1,7 +1,7 @@
 #import <Foundation/NSDictionary.h>
 #import <Foundation/NSURLConnection.h>
 #import <Foundation/NSURLRequest.h>
-#import <PromiseKit/fwd.h>
+#import "fwd.h"
 
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdocumentation"
